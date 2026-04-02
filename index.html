@@ -7,27 +7,33 @@
     <meta name="description" content="Създаване на земеделски карти за ИСАК. Очертаване на имоти, трасиране и генериране на Shape файлове. Без абонаменти и зависимости от трети лица.">
     <meta name="keywords" content="земеделски карти, очертаване на имоти, shape файл, ИСАК, KVS карти, GPS, земеделие, трасиране">
     <meta name="robots" content="index, follow">
+    
+    <!-- SEO Оптимизация -->
+    <link rel="canonical" href="https://zemia.net/">
     <meta property="og:title" content="ЗЕМЯ - Земеделски карти">
-    <meta property="og:description" content="Създаване на земеделски карти за ИСАК. Без абонаменти.">
+    <meta property="og:description" content="Създаване на земеделски карти за ИСАК. Очертаване на имоти, трасиране и генериране на Shape файлове. Без абонаменти и зависимости от трети лица.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://zemia.net">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery.min.js" defer></script>
-    <script src="js/bootstrap-3.1.1.min.js" defer></script>
-    <script>
- addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    <meta property="og:url" content="https://zemia.net/">
+    <meta property="og:image" content="https://zemia.net/images/wel.jpg">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ЗЕМЯ",
+        "description": "Създаване на земеделски карти за ИСАК. Очертаване на имоти, трасиране и генериране на Shape файлове.",
+        "url": "https://zemia.net",
+        "areaServed": "BG",
+        "serviceType": ["GPS карти", "Земеделски карти", "Очертаване на имоти"]
+    }
     </script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71588372-1', 'auto');
-  ga('send', 'pageview');
-</script>
+    
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
     <div class="top-header">
@@ -64,12 +70,12 @@
             <div class="clearfix"></div>
         </div>
     </div>
-    <div class="banner"></div>
+    <div class="banner" role="banner" aria-label="Банер"></div>
     <div class="welcome">
         <div class="container">
             <div class="welcome-grids">
                 <div class="col-md-6 welcm-pic">
-                    <img src="images/wel.jpg" class="img-responsive" alt="Създаване на земеделски карти">
+                    <img src="images/wel.jpg" class="img-responsive" alt="Създаване на земеделски карти" width="600" height="400" loading="lazy">
                 </div>
                 <div class="col-md-6 wel-info">
                     <h2>Добре дошли</h2>
@@ -98,47 +104,47 @@
             </div>
             <div class="destintn-grids">
                 <div class="col-md-4 desti-grid">
-                    <img class="hyperlink-image" src="images/d1.jpg" alt="GPS идентификация на имоти" loading="lazy">
+                    <img class="hyperlink-image" src="images/d1.jpg" alt="GPS идентификация на имоти" width="400" height="250" loading="lazy">
                     <div class="desti-info">
                         <h5><a href="garmin.html">Идентификация на имоти и определяне на площи с GPS</a></h5>
                         <p>Идентификацията (очертаване) на имоти и определяне на обработваемата площ.</p>
                     </div>
                 </div>
                 <div class="col-md-4 desti-grid">
-                    <img class="hyperlink-image" src="images/d2.jpg" alt="Google Earth Pro" loading="lazy">
+                    <img class="hyperlink-image" src="images/d2.jpg" alt="Google Earth Pro" width="400" height="250" loading="lazy">
                     <div class="desti-info">
-                        <h5><a href="https://www.google.com/earth/download/gep/agree.html">Google Earth PRO - Направете виртуално пътуване</a></h5>
-                        <p>Използвайте ключ: "GEPFREE". Разглеждайте имотите си директно върху картата, която ще получите във формат (KML).</p>
+                        <h5><a href="https://www.google.com/earth/download/gep/agree.html" target="_blank" rel="noopener">Google Earth PRO</a></h5>
+                        <p>Използвайте ключ: "GEPFREE". Разглеждайте имотите си директно върху картата.</p>
                     </div>
                 </div>
                 <div class="col-md-4 desti-grid">
-                    <img class="hyperlink-image" src="images/d3.jpg" alt="DNR GPS софтуер" loading="lazy">
+                    <img class="hyperlink-image" src="images/d3.jpg" alt="DNR GPS софтуер" width="400" height="250" loading="lazy">
                     <div class="desti-info">
-                        <h5><a href="https://www.dnr.state.mn.us/mis/gis/DNRGPS/DNRGPS.html">DNR GPS</a></h5>
-                        <p>DNR GPS, чрез който става конверсията към *.shp, автоматично ще затвори линиите в контур.</p>
+                        <h5><a href="https://www.dnr.state.mn.us/mis/gis/DNRGPS/DNRGPS.html" target="_blank" rel="noopener">DNR GPS</a></h5>
+                        <p>Конверсия към *.shp, автоматично затваря линиите в контур.</p>
                     </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
             <div class="destintn-grids">
                 <div class="col-md-4 desti-grid">
-                    <img class="hyperlink-image" src="images/d4.png" alt="Garmin BaseCamp" loading="lazy">
+                    <img class="hyperlink-image" src="images/d4.png" alt="Garmin BaseCamp" width="400" height="250" loading="lazy">
                     <div class="desti-info">
-                        <h5><a href="https://www.garmin.com/en-US/shop/downloads/basecamp">BaseCamp</a></h5>
-                        <p>В BaseCamp има предвидени инструменти за редакция на следи.</p>
+                        <h5><a href="https://www.garmin.com/en-US/shop/downloads/basecamp" target="_blank" rel="noopener">BaseCamp</a></h5>
+                        <p>Инструменти за редакция на следи.</p>
                     </div>
                 </div>
                 <div class="col-md-4 desti-grid">
-                    <img class="hyperlink-image" src="images/d5.png" alt="Easy GPS софтуер" loading="lazy">
+                    <img class="hyperlink-image" src="images/d5.png" alt="Easy GPS софтуер" width="400" height="250" loading="lazy">
                     <div class="desti-info">
-                        <h5><a href="https://www.easygps.com/">Easy GPS</a></h5>
+                        <h5><a href="https://www.easygps.com/" target="_blank" rel="noopener">Easy GPS</a></h5>
                         <p>Безплатен софтуер за обработка на GPX данни.</p>
                     </div>
                 </div>
                 <div class="col-md-4 desti-grid">
-                    <img class="hyperlink-image" src="images/d6.jpg" alt="Android приложение" loading="lazy">
+                    <img class="hyperlink-image" src="images/d6.jpg" alt="Android приложение" width="400" height="250" loading="lazy">
                     <div class="desti-info">
-                        <h5><a href="#">Вече и за Android устройства</a></h5>
+                        <h5>Вече и за Android устройства</h5>
                         <p>Таблети и телефони.</p>
                         <p class="price"><span style="color: red;">Цена: 120 лв!</span></p>
                     </div>
@@ -149,22 +155,37 @@
     </div>
     <div class="copywrite homePage">
         <div class="container">
-            <p>© 2011 - ∞ ЗЕМЯ. Всички права запазени | Земеделски карти <a href="https://www.facebook.com/ZemGPS"><i class="social-facebook"></i></a></p>
+            <p>© 2011 - ∞ ЗЕМЯ. Всички права запазени | Земеделски карти <a href="https://www.facebook.com/ZemGPS" target="_blank" rel="noopener"><i class="social-facebook"></i></a></p>
         </div>
     </div>
+    <a href="#to-top" id="toTop" style="display: block;" aria-label="Към началото"><span id="toTopHover"></span></a>
+    
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/bootstrap-3.1.1.min.js" defer></script>
     <script src="js/lightbox-plus-jquery.min.js" defer></script>
     <script src="js/move-top.js" defer></script>
     <script src="js/easing.js" defer></script>
     <script src="js/responsiveslides.min.js" defer></script>
     <script>
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event){		
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.scroll').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+                }
             });
-            $().UItoTop({ easingType: 'easeOutQuart' });
         });
+    });
     </script>
-    <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover"></span></a>
+    <!-- Google Analytics 4 (замени G-9318R2B82L с твоя ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9318R2B82L"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9318R2B82L');
+    </script>
 </body>
 </html>
