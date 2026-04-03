@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style4.css">
     <script src="js/modernizr.custom.79639.js"></script>
-    <script src="js/jquery.min.js" defer></script>
+    <script data-cfasync="false" src="js/jquery.min.js"></script>
     <script src="js/bootstrap-3.1.1.min.js" defer></script>
     <script>
         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
@@ -118,7 +118,7 @@
         </div>
     </div>
     <script src="js/lightbox-plus-jquery.min.js" defer></script>
-    <script src="js/move-top.js" defer></script>
+    <script data-cfasync="false" src="js/move-top.js"></script>
     <script src="js/easing.js" defer></script>
     <script src="js/responsiveslides.min.js" defer></script>
     <script>
@@ -134,6 +134,6 @@
     gtag('js', new Date());
     gtag('config', 'G-9318R2B82L');
     </script>
-    <a href="#to-top" id="toTop" style="display: block;"><span id="toTopHover"></span></a>
+    <a href="#top" id="toTop" style="display:block; position:fixed; bottom:25px; right:3%; width:40px; height:40px; background:url('images/to-top1.png') no-repeat; cursor:pointer; z-index:9999;" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"></a>
 </body>
 </html>

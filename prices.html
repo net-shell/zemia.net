@@ -32,7 +32,7 @@
  addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
         </script>
 
-        <script src="js/jquery.min.js" defer></script>
+        <script data-cfasync="false" src="js/jquery.min.js"></script>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9318R2B82L"></script>
     <script>
@@ -128,7 +128,7 @@
         </div>
         <!---->
         <!--/animatedcss-->
-        <script type="text/javascript" src="js/move-top.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="js/move-top.js"></script>
         <script type="text/javascript" src="js/easing.js"></script>
         <!--/script-->
         <script type="text/javascript">
@@ -153,7 +153,7 @@
                     $().UItoTop({ easingType: 'easeOutQuart' });
             });
         </script>
-        <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        <a href="#top" id="toTop" style="display:block; position:fixed; bottom:25px; right:3%; width:40px; height:40px; background:url('images/to-top1.png') no-repeat; cursor:pointer; z-index:9999;" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"></a>
         <!---->
         <script src="js/responsiveslides.min.js"></script>
     </body>
